@@ -1,2 +1,2 @@
-# seeci..github.io
+# seeci.github.io
 fullsd
