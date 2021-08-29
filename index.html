@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<link rel="shortcut icon" href="./favicon.ico">
+<head>
+<title>新能源爱好者</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* body 样式 */
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+
+/* 标题 */
+.header {
+    padding:0px;
+    text-align: left;
+    background: #1abc9c;
+    color: red;
+    background:url("./header.png");
+	position:relative;
+	height:268px;
+    width:1918px;
+}
+
+/* 标题字体加大 */
+.header h1 {
+    font-size: 40px;
+	position:absolute;
+    bottom:0px;
+    padding:0px;
+    margin:0px;
+}
+
+/* 导航 */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* 导航栏样式 */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* 右侧链接*/
+.navbar a.right {
+    float: right;
+}
+
+/* 鼠标移动到链接的颜色 */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* 列容器 */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+	/* text-align: center;*/
+    /* position:relative;*/	
+	/* width:1000px;*/
+
+}
+
+/* 创建两个列 */
+/* 边栏 */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+/* 主要的内容区域 */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex:70%;
+    background-color: white;
+    padding: 20px 200px 20px 200px;
+		/* text-align: center;*/
+    /*position:relative;*/	
+	width:100px;
+	flex-shrink:0;
+}
+
+/* 测试图片 */
+.fakeimg {
+    background-color: #333;
+    width: 100%;
+    padding: 20px;
+}
+
+/* 底部 */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 700px 时, 让两栏上下堆叠显示 */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* 响应式布局 - 在屏幕设备宽度尺寸小于 400px 时, 让导航栏目上下堆叠显示 */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>智能汽车爱好者站</h1>
+<!--  <div style="height:80px;"><img src="./header.png" /></div><br>  -->
+  <!-- <p> 创建一个页面。</p> -->
+</div>
+
+<div class="navbar">
+  <a href="./sales.html" target="_blank">新能源销量</a>
+  <a href="./charging.html" target="_blank">交直流快充</a>
+  <a href="./autopilot.html" target="_blank">自动辅助驾驶</a>
+  <a href="./compare.html" target="_blank">数据比较</a>
+  <a href="http://jl.fullsd.cn" target="_blank" class="right">讨论区</a>
+</div>
+
+<div class="row">
+  <div class="side">
+      <h2>热门：</h2>
+<!--      <h5>最近更新:2021/8/29</h5>-->
+<!-- <p style="font-size:10px;color:red"> text <a href="rul" target="_blank">更多</a></p> -->
+      <p style="font-size:10px;color:red">工信部346批次公布特斯拉Model Y 的5种不同续航，三种电量78.4、76.8、60度，四种后电机功率220、202、194、180kW。<a href="https://www.toutiao.com/w/a1707775175386120/?log_from=8e7620d3f28e_1630212251769" target="_blank">更多</a></p>
+      <p style="font-size:10px;color:red">SpaceX starlink星链 卫星宽带 在雪中的实测表现。<a href="https://www.toutiao.com/w/a1705404982078475/?log_from=85de405412949_1630214329753" target="_blank">更多</a></p>
+	  <p style="font-size:10px;color:red">福特电版F-150发布没几天，视频的播放量就超过100多万<a href="https://www.toutiao.com/w/a1700452604679175/?log_from=247b714f752cc_1630214745803" target="_blank">更多</a></p>
+     <!--  <p>关于我的介绍..</p> -->
+      <h3>欢迎关注和订阅我们</h3>
+      <p>头条：</p>
+      <div align="center" class="fakeimg" style="height:420px;"><a href="https://www.toutiao.com/c/user/token/MS4wLjABAAAAQ4yykdU-HgqKJ1k7zFnC857xz3dYBcoj_AmwgU4Fwrw/?tab=all" target="_blank"><img src="./toutiao.png" /></a></div><br>
+      <p>微博：</p>
+      <div align="center" class="fakeimg" style="height:420px;"><a href="https://weibo.com/ddclive" target="_blank"><img src="./weibo.png" /></a></div><br>
+      <p>微信订阅号：</p>
+      <div align="center" class="fakeimg" style="height:420px;"><img src="./weixin.jpg" /></div>
+  </div>
+  <div class="main">
+      <h2>宝马纯电动SAV IX3 搭载不一样的电机</h2>
+      <h5>更新时间:2021/8/29</h5>
+      <div display:"table-cell"; vertical-align: middle; style="height:300px;">
+	  <img src="https://p1-tt.byteimg.com/origin/pgc-image/b2b7b8fbc8794726be0a3799c1bcd6c9.jpg" width="800"; height="300"; /></div>
+      <p>宝马宣传时词频出现最多的是“无稀土” 彰显该车的环保性，其实很早就有无稀土电机 驱动的电车，比如2012年上市的特斯拉Model S，它就采用无稀土的感应电机（375kW），电机转子使用的材料为铜。
+	  <a href="https://www.toutiao.com/w/a1700452604679175/?log_from=247b714f752cc_1630214745803" target="_blank">更多</a>
+	  </p>
+      <br>
+	  
+      <h2>宝马i3、雪佛兰Bolt、特斯拉Model 3 电机功率密度比较</h2>
+      <h5>更新时间:2021/8/29</h5>
+      <div display:"table-cell"; vertical-align: middle; style="height:300px;">
+	  <img src="https://p3-tt.byteimg.com/origin/pgc-image/99617f8f17e64a3a88e5f2f758fac6ad.jpg" width="800"; height="300"; /></div>
+      <p>电机的功率密度是重量/功率，一般汽车厂家只公布电机的最大输出功率，不会公布自己汽车里电机的功率密度。功率有了就差电机的重量了，而且这玩意得拆下来称重才能知道，所以我们从拆车专家Sandy Munro得到各品牌电机的实际重量 。
+	  <a href="https://www.toutiao.com/a6643271414717612558/?log_from=cc62949fed8a4_1630222817804" target="_blank">更多</a>
+	  </p>
+      <br>
+
+      <h2>现代 Ioniq 5（72.6度）800v快充水平</h2>
+      <h5>更新时间:2021/8/29</h5>
+      <div display:"table-cell"; vertical-align: middle; style="height:300px;">
+	  <img src="https://wx1.sinaimg.cn/mw2000/005Np3nXly1grcdphx9csj30ot0bw0tr.jpg" width="800"; height="300"; /></div>
+      <p>功率：峰值充电功率225 kW，较长时间维持在224 kW，6-80%都在100kW以上 SOC：10%-80%使用时长18分钟，20%到80%平均功率为170 kW，使用时长15分钟 充电速率：SOC从20%到80% 充电平均速率为2.2C
+	  <a href="https://weibo.com/5310675841/KjqKseSUb" target="_blank">更多</a>
+	  </p>
+      <br>
+
+      <h2>特斯拉展示了世界第五的超级计算机集群</h2>
+      <h5>更新时间:2021/8/29</h5>
+      <div display:"table-cell"; vertical-align: middle; style="height:300px;">
+	  <img src="https://wx1.sinaimg.cn/mw2000/005Np3nXgy1grq48bt1mpj31jk0mj0xf.jpg" width="800"; height="300"; /></div>
+      <p>在CVPR国际计算机视觉与模式识别会议上展示了世界第五的超级计算机集群，用它来训练大量的神经网络数据，完善自动驾驶系统。
+	  <a href="https://weibo.com/5310675841/KleAqhIgx" target="_blank">更多</a>
+	  </p>
+      <br>
+
+      <h2>800v充电才是纯电动的未来</h2>
+      <h5>更新时间:2021/8/29</h5>
+      <div display:"table-cell"; vertical-align: middle; style="height:300px;">
+	  <img src="https://p26.toutiaoimg.com/img/tos-cn-i-0022/942b20ef25f6474b9f8fee98aa84c386~tplv-obj:763:490.jpg" width="800"; height="300"; /></div>
+      <p>奥迪E-Tron GT 电压800v充电系统(Taycan相同）真的猛，长时间维持高功率充电，5分钟充进18度电、10分钟干进40度电、15分钟60度电，目前在地球上量产轿车里应该是最快的，这速度快赶上加油了，800v充电才是电动未来。不过长时间使用对电池寿命是否影响？
+	  <a href="https://www.toutiao.com/w/a1700780427387904/?log_from=d7ed5827fd7bc_1630224288361" target="_blank">更多</a>
+	  </p>
+      <br>
+
+      <h2>特斯拉Model S 3电机的Plaid版本比双电机的版本能耗更经济</h2>
+      <h5>更新时间:2021/8/29</h5>
+      <div display:"table-cell"; vertical-align: middle; style="height:300px;">
+	  <img src="https://p6.toutiaoimg.com/img/tos-cn-i-0022/ab9700489f474beebfe264d42def9ed0~tplv-obj:632:407.jpg" width="800"; height="300"; /></div>
+      <p>EPA数据显示，特斯拉Model S 3电机的Plaid版本比双电机的版本能耗更经济，3电机100英里使用33度电，相当于100公里20度电左右，而双电机的MS 100英里消耗35度电，不管是在城市道路与高速。如果换成大排量的油车，大排量性能车在城市道路所消耗能量肯定比小排量的要大很多，电车优势明显。
+	  <a href="https://www.toutiao.com/w/a1703265915190276/?log_from=bac946627bde_1630224674769" target="_blank">更多</a>
+	  </p>
+      <br>	  
+  
+  </div>
+</div>
+
+<div class="footer">
+  <h2>联系方式：请私信相关号</h2>
+</div>
+
+</body>
+</html>
